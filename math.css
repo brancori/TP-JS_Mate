@@ -1,0 +1,123 @@
+*{
+    font-family: 'Marvel', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+span{
+    font-size: medium;
+}
+input{
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    border-radius: 15px;
+    border-style: none;
+    color: green;
+    text-transform: uppercase;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+}
+input:hover{
+    width: 80%;
+}
+button{
+    border-radius: 7px;
+    width: 100px;
+    border-style: none;
+    color: white;
+    background-color: black;
+    margin: auto
+}
+button:hover{
+    background-color: red;
+    color: aliceblue;
+    width: 120px;
+}
+.Marvel_title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+.main_cotainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    width: 100vw;
+    height: auto;
+}
+.img_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 250px;
+}
+.img_container  img{
+    width: 150px;
+    height: auto;
+    object-fit: fill;
+    transform: scale(1.25);
+}
+.img_container  img:hover{
+    transform: scale(1.5);
+}
+.main_cotainer .wandy{
+    width: 150px;
+    height: auto;
+    object-fit: fill;
+    transform: scale(.85);
+}
+.main_cotainer .wandy:hover{
+    transform: scale(.95);
+}
+.funko_container{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    padding: 7px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.nor_price span{
+    font-size:18px;
+}
+.cupons{
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.funko_container div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 7px;
+}
+.dicount_price_nor span{
+    font-size: 25px;
+    color: brown;
+    font-weight: bold;
+    
+}
+.new_price{
+    display: flex;
+    background-color: red;
+    border-radius: 15px;
+    margin: 15px auto;
+    width: 70%;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+.new_price{
+    font-size: 25px;
+    margin-top: 0;
+}
+.exhib {
+    font-size: 25px;
+}
