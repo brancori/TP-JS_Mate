@@ -118,6 +118,7 @@
 // ]
 
 
+
 const valorWanda = document.getElementById('newPricewsw');
 const valorWw = document.getElementById('newPriceww');
 const valorWs = document.getElementById('newPricews');
@@ -134,6 +135,8 @@ const resultsws = document.getElementById('resultsws');
 const resultww = document.getElementById('resultww');
 const resultws = document.getElementById('resultws');
 const resultft = document.getElementById('resultft');
+
+const cupon = document.getElementById('disscountwsw');
 
 
 function wandaSW(descuento,precio){
@@ -152,21 +155,43 @@ valorWs.innerHTML = "$" + resultado3.toFixed(2) +"mx";
 const resultado4 = wandaSW(55, 650);
 valorWft.innerHTML = "$" + resultado4.toFixed(2) +"mx";
 
+
+
+
 btn.addEventListener('click',calPCD);
 btn2.addEventListener('click',calPCD2);
 btn3.addEventListener('click',calPCD3);
 btn4.addEventListener('click',calPCD4);
 
+
+
+// if( cupon == 'BRANCORI'){
+//     descuento_ = 30;
+// }else if( cupon == 'Navidad'){
+//     descuento_ = 40;
+// }else{
+//     descuento_ = 0;
+//     return;
+// }
+
+
+
 function calPCD(){
-    var varl = resultado2;
-    const descuento_ = Number(disscountwsw.value);
-    if(descuento_ === 0){
+    const varl = resultado2;
+    let descuento_ = disscountwsw.value;
+    if(descuento_ == ''){
         resultsws.innerHTML = "";
-    }else{
+    }else if(descuento_ == "brancori"){
+        descuento_ = 30;
         const NewPrice = (varl * (100 - descuento_) / 100).toFixed(2);
         resultsws.innerHTML = '$'+ NewPrice ;
+    }else{
+        const NewPrice = (varl * (100 - descuento_) / 100).toFixed(2);
+        resultsws.innerHTML = 'No valido' ;
     }
 }
+
+
 
 function calPCD2(){
     var varl = resultado1;
